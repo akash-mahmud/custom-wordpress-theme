@@ -1,0 +1,179 @@
+/*====================
+Common Css
+====================*/
+
+img {
+  max-width: 100%;
+}
+
+/*====================
+
+Header Area css
+=====================*/
+
+#header_area {
+  padding: 15px 0;
+}
+/*================================== 
+Main Menu CSS
+==================================*/
+#main_menu {
+  width: 100%;
+  clear: both;
+  /*========== Drop Down Style===== 
+
+
+=================================*/
+}
+
+#main_menu .inner_menu {
+  background: #fff;
+  position: relative;
+  min-height: 30px;
+  padding: 15px 0;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+#main_menu .inner_menu:after {
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
+}
+
+#main_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#main_menu ul li {
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+}
+
+#main_menu ul li a {
+  color: #333333;
+  display: block;
+  text-decoration: none;
+  padding: 4px;
+}
+
+#main_menu ul li a:hover {
+  background-color: skyblue;
+  color: #fff;
+}
+
+#main_menu ul li:hover a {
+  color: #fff;
+  background-color: skyblue;
+}
+
+#main_menu ul li:hover ul li a {
+  color: white;
+  background-color: black;
+}
+
+#main_menu ul ul {
+  position: absolute;
+  background: skyblue;
+  width: 180px;
+  left: -999999999999999px;
+  top: 33px;
+}
+
+#main_menu ul ul li {
+  display: block;
+  margin: 0;
+}
+
+#main_menu ul ul li a:hover {
+  background: #333333;
+  color: #333333;
+}
+
+#main_menu ul ul li a:hover {
+  background: #333333;
+  color: #333333;
+}
+
+#main_menu ul ul li:hover a {
+  background: #fff;
+  color: #fff;
+}
+
+#main_menu ul ul li:hover ul li a {
+  background: none;
+  color: #fff;
+}
+
+#main_menu ul ul li ul li a:hover {
+  background: #fff;
+  color: #fff;
+}
+
+#main_menu ul ul ul {
+  position: absolute;
+  left: 180px;
+  top: 0px;
+}
+
+#main_menu ul li:hover ul {
+  position: absolute;
+  background: blue;
+  color: #fff;
+  width: 180px;
+  left: 0;
+  top: 50px;
+}
+
+#main_menu ul li:hover ul ul {
+  left: -9999999999999999999px;
+}
+
+#main_menu ul li:hover ul li:hover ul {
+  left: 180px;
+}
+
+/*==================================
+Menu Position
+===================================*/
+
+.left_menu .col-md-3 {
+  order: 2;
+}
+.left_menu .col-md-9 {
+  order: 1;
+}
+.left_menu .col-md-9 ul {
+  text-align: left;
+}
+.center_menu .col-md-3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.center_menu .col-md-3 a img {
+  width: auto;
+  height: 5rem;
+}
+.center_menu .col-md-9 {
+  width: 100%;
+}
+.center_menu .col-md-9 ul {
+  text-align: center;
+}
+/* #header_area .col-md-9 ul li a span{
+  display: block;
+} */
+.walker_nav {
+  display: block;
+  font-size: 0.8rem;
+}
