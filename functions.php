@@ -89,6 +89,29 @@ function akash_customizar_register($wp_customize)
 
         ),
     ));
+        //Footer option
+
+        $wp_customize->add_section('akash_footer_option', array(
+
+            'title' => __('Footer Option', 'akash'),
+            'description' => 'If you interested to change or update your footer setting, you can do it here.',
+    
+        ));
+    
+        $wp_customize->add_setting('akash_copyright_section', array(
+    
+            'default' => '&copy; copyright 2021 | Akash',
+    
+        ));
+    
+        $wp_customize->add_control('akash_copyright_section', array(
+    
+            'label' => 'Copyright Text',
+            'description' => 'If need you can update your copyright text from here',
+            'setting' => 'akash_copyright_section',
+            'section' => 'akash_footer_option',
+
+        ));
 }
 
 add_action('customize_register', 'akash_customizar_register');

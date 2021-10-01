@@ -177,3 +177,25 @@ Menu Position
   display: block;
   font-size: 0.8rem;
 }
+
+/*==================================
+Copy right area
+===================================*/
+#copyright_area{
+background-color: #292929;
+padding: 20px 0 ;
+color: #fff;
+text-align: center
+}
+#copyright_area p{
+margin: 0;
+  color: #fff;
+  font-size: 1rem;
+  }
+  #copyright_area p a{
+      color: #ea1a70;
+ }
+ #copyright_area p a:hover{
+  text-decoration:underline
+
+}
