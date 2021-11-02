@@ -1,7 +1,9 @@
 /*====================
 Common Css
 ====================*/
-
+body{
+  height: 100vh;
+}
 img {
   max-width: 100%;
 }
@@ -177,6 +179,42 @@ Menu Position
   display: block;
   font-size: 0.8rem;
 }
+a.read_more {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: 0.4s;
+  background-color: skyblue;
+  color: #fff;
+  border-radius: 8px;
+}
+/*===========================================
+  Pagenav Area Styling
+===========================================*/
+#page_nav {
+}
+#page_nav p.pages {
+  background: skyblue;
+  color: #fff;
+  padding: 5px 10px;
+}
+#page_nav p.pages span {
+  display: inline-block;
+  padding: 0 5px;
+}
+#page_nav .page-numbers {
+  background: skyblue;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+#page_nav .page-numbers.current,
+#page_nav .page-numbers:hover {
+  background: #262626;
+}
 
 /*==================================
 Copy right area
@@ -199,3 +237,8 @@ margin: 0;
   text-decoration:underline
 
 }
+
+
+/*==================================
+Index page style
+===================================*/
