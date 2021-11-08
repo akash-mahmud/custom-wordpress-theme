@@ -1,13 +1,40 @@
 /*====================
 Common Css
 ====================*/
-body{
-  height: 100vh;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5em;
 }
 img {
   max-width: 100%;
 }
-
+a.redmore {
+  background: skyblue;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+  transition: 0.5s;
+}
+a.redmore:hover {
+  background: #262626;
+}
 /*====================
 
 Header Area css
@@ -15,6 +42,7 @@ Header Area css
 
 #header_area {
   padding: 15px 0;
+  box-shadow: 0 3px 10px #ddd;
 }
 /*================================== 
 Main Menu CSS
@@ -88,7 +116,7 @@ Main Menu CSS
   background: skyblue;
   width: 180px;
   left: -999999999999999px;
-  top: 33px;
+  top: 25px;
 }
 
 #main_menu ul ul li {
@@ -133,7 +161,7 @@ Main Menu CSS
   color: #fff;
   width: 180px;
   left: 0;
-  top: 50px;
+  top: 30px;
 }
 
 #main_menu ul li:hover ul ul {
@@ -191,8 +219,7 @@ a.read_more {
 /*===========================================
   Pagenav Area Styling
 ===========================================*/
-#page_nav {
-}
+
 #page_nav p.pages {
   background: skyblue;
   color: #fff;
@@ -215,7 +242,86 @@ a.read_more {
 #page_nav .page-numbers:hover {
   background: #262626;
 }
-
+/*===========================================
+  Sibebar Area Styling
+===========================================*/
+.child_sidebar {
+  margin-bottom: 20px;
+}
+.child_sidebar h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
+  line-height: 1em;
+  border-left: 5px solid skyblue;
+  padding-left: 10px;
+}
+.child_sidebar input[type="search"] {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.child_sidebar input[type="search"]:focus {
+outline: none;
+}
+.child_sidebar button[type="submit"] {
+  background: skyblue;
+  border: 1px solid skyblue;
+  padding: 10px;
+  margin: 0;
+  color: #fff;
+  transition: 0.5s;
+}
+.child_sidebar button[type="submit"]:hover {
+  background: #262626;
+  border: 1px solid #262626;
+}
+.child_sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+.child_sidebar ul li {
+  display: block;
+  margin-bottom: 5px;
+}
+.child_sidebar ul ul {
+  display: none;
+}
+.child_sidebar ul li a {
+  display: inline-block;
+  color: #262626;
+  text-decoration: none;
+}
+.child_sidebar ul li a:hover {
+  color: skyblue;
+}
+.child_sidebar a.tag-cloud-link {
+  color: #fff;
+  background: #262626;
+  display: inline-block;
+  font-size: 12px !important;
+  text-decoration: none;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.child_sidebar a.tag-cloud-link:hover {
+  background: skyblue;
+}
+/*===========================================
+  Footer Area Styling
+===========================================*/
+#footer {
+  background: #292929;
+  padding: 40px 0 20px;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+#footer .child_sidebar ul li a {
+  color: #fff;
+}
 /*==================================
 Copy right area
 ===================================*/
@@ -231,7 +337,7 @@ margin: 0;
   font-size: 1rem;
   }
   #copyright_area p a{
-      color: #ea1a70;
+      color: skyblue;
  }
  #copyright_area p a:hover{
   text-decoration:underline
@@ -239,6 +345,46 @@ margin: 0;
 }
 
 
-/*==================================
-Index page style
-===================================*/
+/*=======================================
+ Index Page Style
+========================================*/
+#body_area {
+  padding: 45px 0;
+}
+#body_area .blog_area {
+  width: 100%;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0px 0px 10px #ddd;
+}
+#body_area .post_thumb {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#body_area .post_thumb img {
+  transition: 0.5s;
+  width: 100%;
+  display: block;
+}
+#body_area .post_thumb:hover img {
+  transform: scale(1.1);
+}
+#body_area .post_details {
+  width: 100%;
+}
+#body_area .post_details h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+#body_area .post_details h2 a {
+  color: #262626;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#body_area .post_details h2 a:hover {
+  color: skyblue;
+}
+

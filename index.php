@@ -46,7 +46,7 @@ endif
 
       </div>
       <div class="col-md-3">
-     <h1>This is sidebar area</h1>
+     <?php get_sidebar( ); ?>
       </div>
     </div>
   </div>
